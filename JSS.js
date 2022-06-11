@@ -1,11 +1,10 @@
-function countdown(n) {
-  if (n < 1) {
-    return [];
-  } else {
-    const arr = countdown(n - 1);
-    arr.unshift(n);
-    return arr;
-  }
+function Range(from, to) {
+  this.from = from;
+  this.to = to;
 }
 
-console.log(countdown(5));
+let r = new Range(1, 3);
+console.log(r); // Create a Range object; note the use of new
+// r.includes(2); // => true: 2 is in the range
+// r.toString(); // => "(1...3)"
+// [...r]; // => [1, 2, 3]; convert to an array via iterator
