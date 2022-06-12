@@ -1,10 +1,13 @@
-function Range(from, to) {
-  this.from = from;
-  this.to = to;
-}
+// Destructuring an Array of item prices
+const prices = [500, 650, 700];
+const [priceOne, priceTwo, priceThree] = prices;
+console.log(priceOne); // 500
 
-let r = new Range(1, 3);
-console.log(r); // Create a Range object; note the use of new
-// r.includes(2); // => true: 2 is in the range
-// r.toString(); // => "(1...3)"
-// [...r]; // => [1, 2, 3]; convert to an array via iterator
+// Destructuring an Object of user bio
+const user = {
+  firstname: "Robo",
+  lastName: "Cop",
+  canFly: false,
+};
+const { firstname, canFly } = user;
+console.log(firstname); // Robo

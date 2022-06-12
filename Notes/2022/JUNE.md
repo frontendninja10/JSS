@@ -67,3 +67,20 @@ side of the equals sign is an array or object (a “structured” value), and th
 
 When a destructuring assignment occurs, one or more values are
 extracted (“destructured”) from the value on the right and stored into the variables named on the left.
+
+# Day 12
+
+## Constructor Functions
+
+The regular {...} syntax allows to create one object. But often we need to create _many_
+similar objects, like multiple users or menu items and so on.
+That can be done using _constructor functions_ and the "new" operator.\
+Constructor functions technically are regular functions.
+
+### Conventions for writing constructor functions
+
+1. They are named with capital letters
+2. They should be executed only with the "new" operator
+
+![](assets/images/constructors.jpg)
+The main purpose of constructors is: _to implement reusable object creation code_.
