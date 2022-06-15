@@ -84,3 +84,16 @@ Constructor functions technically are regular functions.
 
 ![](assets/images/constructors.jpg)
 The main purpose of constructors is: _to implement reusable object creation code_.
+
+# Day 14
+
+## Getters and Setters
+
+Properties in JavaScript can be classified as data or accessor properties. Data properties that consist of a key-value pair. Accessor properties do not have key-value pairs but solely consist of methods called _getters_ and _setters_.\
+Getters and Setters are defined using the keywords get and set respectively.
+Once a property is defined with get prop() or set prop() , it’s an accessor property, not a data property any more.
+
+When a data property is read, the value associated with it is returned while, when an accessor property is read, the getter method is invoked. And whatever gets returned is the value of the access expression.\
+When a data property is assigned a value, the property value gets changed (or a new property is added if it wasn't existing before) while, when an accessor property is assigned to a value, JavaScript invokes the setter method, passing the value of the righthand side of the assignment as an argument to the setter method (this method is responsible for “setting,” in some sense, the value of a data property). The return value of the setter method is ignored.
+
+Using getters over regular methods provide a simpler syntax.

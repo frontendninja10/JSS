@@ -1,13 +1,40 @@
-// Destructuring an Array of item prices
-const prices = [500, 650, 700];
-const [priceOne, priceTwo, priceThree] = prices;
-console.log(priceOne); // 500
-
-// Destructuring an Object of user bio
-const user = {
-  firstname: "Robo",
-  lastName: "Cop",
-  canFly: false,
+let user = {
+  name: "John",
+  surname: "Smith",
+  get fullName() {
+    return `${this.name} ${this.surname}`;
+  },
+  set fullName(value) {
+    [this.name, this.surname] = value.split(" ");
+  },
 };
-const { firstname, canFly } = user;
-console.log(firstname); // Robo
+
+const ninjaAcademy = {
+  maleNinjas: ["Kositu", "Hamura"],
+  femaleNinjas: ["Uto", "Ikoji"],
+
+  get ninjas() {
+    return `${this.maleNinjas[0]} vs ${this.femaleNinjas[0]}`;
+  },
+
+  set ninjas(ninjaPair) {
+    [maleNinja, femaleNinja] = ninjaPair.split(" ");
+    this.maleNinjas.push(maleNinja);
+    this.femaleNinjas.push(femaleNinja);
+  },
+};
+
+const prices = {
+  priceInDollars: 500,
+
+  get priceInNaira() {
+    return `${this.priceInDollars * 400}`;
+  },
+
+  set priceInNaira(naira) {
+    this.priceInDollars = naira / 400;
+  },
+};
+
+prices.priceInNaira = 500;
+console.log(prices);
