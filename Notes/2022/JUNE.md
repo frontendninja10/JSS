@@ -97,3 +97,13 @@ When a data property is read, the value associated with it is returned while, wh
 When a data property is assigned a value, the property value gets changed (or a new property is added if it wasn't existing before) while, when an accessor property is assigned to a value, JavaScript invokes the setter method, passing the value of the righthand side of the assignment as an argument to the setter method (this method is responsible for “setting,” in some sense, the value of a data property). The return value of the setter method is ignored.
 
 Using getters over regular methods provide a simpler syntax.
+
+# Day 15
+
+A promise in JavaScript is exactly what it sounds like - you use it to make a promise to do something, usually asynchronously. When the task completes, you either fulfill your promise or fail to do so.
+
+A promise has three states: pending, fulfilled, and rejected. A promise created empty is forever stuck in the pending state because you did not add a way to complete the promise. The resolve and reject parameters given to the promise argument are used to do this. resolve is used when you want your promise to succeed, and reject is used when you want it to fail.
+
+The then method is executed immediately after your promise is fulfilled with resolve.
+
+catch is the method used when your promise has been rejected. It is executed immediately after a promise's reject method is called.
