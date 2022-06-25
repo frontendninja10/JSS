@@ -107,3 +107,19 @@ A promise has three states: pending, fulfilled, and rejected. A promise created 
 The then method is executed immediately after your promise is fulfilled with resolve.
 
 catch is the method used when your promise has been rejected. It is executed immediately after a promise's reject method is called.
+
+# Day 24
+
+## What is the terminal?
+
+Terminal is an application that lets you interact with your computer. You usually give instructions to your computer through clicking around in applications or typing keys to make things happen.
+Terminal lets you do many of the same things; it’s just more direct. You can give clear, structured orders to your computer using the terminal. You just have to be patient and willing to try them!
+
+You can also use Terminal to create, open, and update files, which will save you hours of time if you ever want to become a web developer or designer. Sometimes, you may need to interact with files that do not live in your computer but a server. Servers do not have screens which means that you may not be able to interact withe the files or codebase using a _GUI_ (Graphic User Interface).
+
+In order to see where you are at any time within your computer, you can type the command pwd . pwd stands for print working directory.
+"Directory" in the world of computers just means "folder." By running this command, we're asking our computer which folder we're in.
+
+## Navigation
+
+The ls and cd commands are useful for navigating through your system.
