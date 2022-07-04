@@ -17,9 +17,9 @@ So unlike var, when you use let, a variable with the same name can only be decla
 1. In JavaScript, there are 3 different types of scope: _Block_ scope (ES6), _Function_ scope and _Global_ scope.
 2. Block-scoped variables cannot be accessed from outside the block.
 3. _let_ and _const_ provide Block scope in JavaScript, _var_ does not.A variable declared with _var_ inside a block scope becomes globally scoped. But if the block was inside a function, then the variable has function scope.
-4. Function-scoped variables cannot be from outside the function.
+4. Function-scoped variables cannot be accessed from outside the function.
 5. Variables declared with _var_, _let_ and _const_ all have function scope.
-6. Global-scoped variables cannot be accessed from anywhere in the program.
+6. Global-scoped variables can be accessed from anywhere in the program.
 7. Variables declared with _var_, _let_ and _const_ all have global scope.
 
 ## Mutating an Array with const
